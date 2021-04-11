@@ -4,10 +4,15 @@
     padding: 0;
 }
 
-.container{
-    width: 1170px;
+body{
+    min-width: 1600px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
 }
 
 /* UTILITY */
@@ -38,45 +43,171 @@
 border-radius: 5px;
 }
 
+.txt_blue{
+    color: #006AFF;
+}
+
 .btn_holo{
 color: #408FFF;
 border: 1px solid #408FFF;
-padding: 10px;
+padding: 0.5rem 1rem;
 }
 
 /* /UTILITY */
 
+/* NAV MENU */
 .logo_nav{
-width: 13rem;
-padding: 10px 0;
+    width: 10rem;
+    padding: 0.8rem 0;
 }
 
 
 .link_menu > li{
     display: inline-block;
     list-style: none;
-    padding-left: 20px;
+    padding-left: 1rem;
 }
 
 li > a{
-text-decoration: none;
-color: #082051;
-font-weight: 600;
-font-size: 1rem;
+    text-decoration: none;
+    color: #082051;
+    font-weight: 600;
+    font-size: 1rem;
 }
+
+/* /NAV MENU */
+
+/* JUMBO BANNER */
+
+.jumbo{
+    background-image: url("../img/bg-banner-home.jpg");
+    background-position-x: 21%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.jumbo_text{
+    width: 95%;
+    font-size: 1.8rem;
+    color: white;
+    line-height: 60px;
+    margin-top: 85px;
+    font-weight: 500;
+}
+
+
+.jumbo p{
+    color: #B1C4FD;
+    line-height: 2rem;
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.form_container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    margin: 4rem 0;
+    width: 85%;
+    text-align: center;
+}
+
+.form_container h2{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.form_container h3{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
+}
+
+input[type=email], input[type=password], input[type=submit], input[type=button]{
+    width: 100%;
+    margin: 0.3rem 0;
+    border-radius: 0.2rem;
+    font-weight: 700;
+}
+
+input[type=email], input[type=password]{
+    border: 1px solid lightgrey;
+    height: 2.5rem;
+}
+
+input[type=submit], input[type=button]{
+    height: 2rem;
+    font-size: 0.9rem;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #579AFF;
+    color: white;
+    border: none;
+}
+
+input[type=button]{
+    background-image: url("../img/google-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left 1rem top;
+    background-color: white;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.2rem lightgrey;
+}
+/* /JUMBO BANNER */
+
 
 @media screen and (min-width: 992px) {
 
+    /* NAV MENU */
     nav .bars_icon{
         display: none;
     }
+    /* /NAV MENU */
 
 }
     
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    /* NAV MENU */
+    .container{
+        width: 100%;
+    }
+
+    .row{
+        justify-content: flex-start;
+    }
+
+    .logo_nav{
+        padding-left: 1rem;
+    }
+
+    nav .col-lg-4 > ul{
+        display: none;
+    }
+
+    nav .col-lg-6{
+        display: none;
+    }
+
+    nav .bars_icon{
+        color:  #408FFF;
+        transform: scale(1.3);
+        margin-left: 5rem;
+    }
+    /* /NAV MENU */
+
+}
 
 
 @media screen and (max-width: 767px) {
 
+    /* NAV MENU */
     .container{
         width: 100%;
     }
@@ -85,43 +216,23 @@ font-size: 1rem;
         justify-content: flex-start;
     }
     
-    nav .col-lg-4 > ul{
-        display: none;
-    }
-
-    nav .col-lg-5{
-        display: none;
-    }
-
-    nav .bars_icon{
-        color:  #408FFF;
-        transform: scale(1.3);
-    }
-
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    
-    .container{
-        width: 100%;
-    }
-
-    .row{
-        justify-content: flex-start;
+    .logo_nav{
+        padding-left: 1rem;
     }
 
     nav .col-lg-4 > ul{
         display: none;
     }
 
-    nav .col-lg-5{
+    nav .col-lg-6{
         display: none;
     }
 
     nav .bars_icon{
         color:  #408FFF;
         transform: scale(1.3);
+        margin-left: 5rem;
     }
+    /* /NAV MENU */
 
 }

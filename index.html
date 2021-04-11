@@ -17,24 +17,31 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
     <title>DigitalOcean</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
-            <div class="container">
+
+        <!-- Nav Menu -->
+        <div>
+            <nav class="container">
 
                 <div class="row dp_flex center">
 
                     <!-- Logo Sito -->
-                    <div class="col-lg-3 col-md-11 col-xs-11">
+                    <div class="col-lg-2 col-md-11 col-xs-11">
                         <img class="logo_nav" src="./assets/img/logo.png" alt="Logo DigitalOcean">
                     </div>
 
                     <!-- Center Menu -->
-                    <div class="col-lg-5">
+                    <div class="col-lg-6">
                         <ul class="link_menu dp_flex center">
                             <li>
                                 <a href="#">
@@ -86,10 +93,54 @@
 
                     </div>
                 </div>
+            </nav>
+
+
+        </div>
+        <!-- /Nav Menu -->
+
+        <!-- Jumbo Banner -->
+        <div class="jumbo">
+            <div class="container dp_flex sp_around">
+
+                <div class="col-lg-6">
+                    <div class="jumbo_text">
+                        <h1>The simplest cloud platform for developers & teams</h1>
+
+                    </div>
+                    <p>
+                        Deploy, manage, and scale cloud applications faster and more efficently on DigitalOcean. We make
+                        managing infrastructure easy for teams and businesses, whether you're running one virtual
+                        machine or ten thousand.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 dp_flex flex_end">
+                    <div class="container form_container">
+                        <h2>
+                            Deploy your app in seconds.
+                        </h2>
+                        <h2 class="txt_blue">
+                            Get started now.
+                        </h2>
+                        <form action="#">
+                            <input type="email" name="email" id="mail" placeholder="Email" required>
+                            <input type="password" name="password" id="pass" placeholder="Password" required>
+                            <input type="submit" value="Create your account">
+                            <input type="button" value="Sing up with google">
+                            <h3>
+                                By signing up you agree to the <a href="#">Terms of Service</a>
+                            </h3>
+                        </form>
+                    </div>
+
+                </div>
             </div>
 
 
-        </nav>
+        </div>
+        <!-- /Jumbo Banner -->
+
 
     </header>
 
