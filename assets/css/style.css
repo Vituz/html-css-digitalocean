@@ -19,7 +19,6 @@ body{
 .dbg{
     background-color: cornflowerblue;
     height: 300px;
-    width: 100%;
 }
 
 .dp_flex{
@@ -190,6 +189,58 @@ h4{
 
 /* /PARTNERS */
 
+/* DEPLOY */
+.deploy{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.deploy h2{
+    font-size: 2.2rem;
+    line-height: 4rem;
+}
+
+.deploy p{
+    font-size: 1.38rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.deploy_cards{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.deploy_cards > div > div:first-child {
+    border-left: 1px solid #707C98;
+}
+
+.deploy_cards li{
+    list-style: none;
+    margin: 1rem 0;
+    font-weight: 500;
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.card{
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+.card h3{
+    margin: 0.6rem 0;
+}
+
+.card p{
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+/* /DEPLOY */
+
 @media screen and (min-width: 992px) {
 
     /* NAV MENU */
@@ -210,10 +261,6 @@ h4{
     /* NAV MENU */
     .container{
         width: 95%;
-    }
-
-    .row{
-        justify-content: flex-start;
     }
 
     nav .col-lg-4 > ul{
@@ -323,5 +370,20 @@ h4{
     font-size: 1.5rem;
 }
 /* /PARTNERS */
+
+/* DEPLOY */
+.deploy_cards > div > div:first-child {
+    margin-bottom: 3rem;
+}
+
+.deploy_cards{
+    width: 100%;
+}
+
+.card{
+    padding-left: 0;
+}
+
+/* /DEPLOY */
 
 }
