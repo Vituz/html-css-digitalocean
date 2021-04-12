@@ -48,6 +48,27 @@ border: 1px solid #408FFF;
 padding: 0.5rem 1rem;
 }
 
+
+.title{
+    font-size: 2.2rem;
+    line-height: 4rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    font-size: 1.38rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    color: #707C98;
+}
+
+.mg_top-1{
+    margin-top: 1rem;
+}
+
 /* Color */
 .txt_blue{
     color: #006AFF;
@@ -78,7 +99,7 @@ padding: 0.5rem 1rem;
     padding-left: 1rem;
 }
 
-li > a{
+.link_menu > li > a{
     text-decoration: none;
     color: #082051;
     font-weight: 600;
@@ -176,12 +197,12 @@ input[type=button]{
     padding-right: 0.5rem;
 }
 
-h4{
+.partners_txt{
     margin-top: 2rem;
     text-transform: uppercase;
 }
 
-.stories a{
+.special_link{
     text-decoration: none;
     margin-bottom: 1.5rem;
     font-weight: 500;
@@ -190,22 +211,6 @@ h4{
 /* /PARTNERS */
 
 /* DEPLOY */
-.deploy{
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.deploy h2{
-    font-size: 2.2rem;
-    line-height: 4rem;
-}
-
-.deploy p{
-    font-size: 1.38rem;
-    line-height: 2rem;
-    font-weight: 500;
-    margin-bottom: 4rem;
-}
 
 .deploy_cards{
     width: 80%;
@@ -227,7 +232,7 @@ h4{
 
 .card{
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding-left: 2rem;
 }
 .card h3{
@@ -237,9 +242,60 @@ h4{
 .card p{
     font-weight: 500;
     line-height: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 /* /DEPLOY */
+
+/* DESIGNED */
+
+.slide_img{
+    width: 60%;
+}
+
+.slide_img img{
+    width: 100%;
+}
+
+/* .fa-angle-left, .fa-angle-right{
+    transform: scale(4);
+} */
+
+.arrow_left, .arrow_right{
+    transform: scale(4);
+}
+
+.arrow_left{
+    padding-left: 2.5rem;
+    color: #6F7B97;
+}
+
+.arrow_right{
+    padding-right: 2.5rem;
+    color: #031C4E;
+}
+
+.fa-circle{
+color: #006AFF;
+margin-top: 0.8rem;
+}
+
+.designed_b_txt{
+    text-align: center;
+    padding: 1.5rem 0 4rem 0;
+}
+
+.designed_b_txt h4{
+    font-size: 1.1rem;
+    color: #0F2656;
+}
+
+.fa-circle{
+    transform: scale(0.8);
+}
+
+/* /DESIGNED */
+
 
 @media screen and (min-width: 992px) {
 
@@ -350,40 +406,46 @@ h4{
     /* /JUMBO BANNER */
 
     /* PARTNERS */
-.partners{
-    flex-flow: wrap;
-}
+    .partners{
+        flex-flow: wrap;
+    }
 
-.partners > div {
-    text-align: center;
-}
+    .partners > div {
+        text-align: center;
+    }
 
-.partners > div > img {
-    width: 80%;
-}
+    .partners > div > img {
+        width: 80%;
+    }
 
-h4{
-    font-size: 1.5rem;
-}
+    h4{
+        font-size: 1.5rem;
+    }
 
-.stories a{
-    font-size: 1.5rem;
-}
-/* /PARTNERS */
+    .stories a{
+        font-size: 1.5rem;
+    }
+    /* /PARTNERS */
 
-/* DEPLOY */
-.deploy_cards > div > div:first-child {
-    margin-bottom: 3rem;
-}
+    /* DEPLOY */
+    .deploy_cards > div > div:first-child {
+        margin-bottom: 3rem;
+    }
 
-.deploy_cards{
-    width: 100%;
-}
+    .deploy_cards{
+        width: 100%;
+    }
 
-.card{
-    padding-left: 0;
-}
+    .card{
+        padding-left: 0;
+    }
 
-/* /DEPLOY */
+    /* /DEPLOY */
+
+    /* PARTNERS */
+    .arrow_left, .arrow_right{
+        display: none;
+        }
+    /* /PARTNERS */
 
 }
