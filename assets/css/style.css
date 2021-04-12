@@ -43,15 +43,26 @@ body{
 border-radius: 5px;
 }
 
-.txt_blue{
-    color: #006AFF;
-}
-
 .btn_holo{
 color: #408FFF;
 border: 1px solid #408FFF;
 padding: 0.5rem 1rem;
 }
+
+/* Color */
+.txt_blue{
+    color: #006AFF;
+}
+
+.txt_gray{
+    color: #707C98;
+}
+
+.bg_gray{
+    background-color: #F3F5F9;
+}
+
+/* /Color */
 
 /* /UTILITY */
 
@@ -128,13 +139,13 @@ li > a{
 input[type=email], input[type=password], input[type=submit], input[type=button]{
     width: 100%;
     margin: 0.3rem 0;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     font-weight: 700;
 }
 
 input[type=email], input[type=password]{
     border: 1px solid lightgrey;
-    height: 2.5rem;
+    height: 2.8rem;
 }
 
 input[type=submit], input[type=button]{
@@ -160,6 +171,24 @@ input[type=button]{
 }
 /* /JUMBO BANNER */
 
+/* PARTNERS */
+.partners > div > img {
+    width: 10rem;
+    padding-right: 0.5rem;
+}
+
+h4{
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.stories a{
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+/* /PARTNERS */
 
 @media screen and (min-width: 992px) {
 
@@ -175,7 +204,7 @@ input[type=button]{
 @media screen and (min-width: 768px) and (max-width: 991px) {
     
     body{
-        min-width: 768px;
+        min-width: 991px;
     }
 
     /* NAV MENU */
@@ -208,10 +237,10 @@ input[type=button]{
     }
 
     .jumbo_text{  
-        font-size: 1.19rem;
+        font-size: 1.3rem;
         line-height: 2.8rem;
     }
-   
+
     .jumbo p{
         font-size: 1.5rem;
     }
@@ -231,9 +260,9 @@ input[type=button]{
         width: 95%;
     }
 
-    .row{
+    /* .row{
         justify-content: flex-start;
-    }
+    } */
 
     nav .col-lg-4 > ul{
         display: none;
@@ -272,5 +301,27 @@ input[type=button]{
     }
 
     /* /JUMBO BANNER */
+
+    /* PARTNERS */
+.partners{
+    flex-flow: wrap;
+}
+
+.partners > div {
+    text-align: center;
+}
+
+.partners > div > img {
+    width: 80%;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+.stories a{
+    font-size: 1.5rem;
+}
+/* /PARTNERS */
 
 }
