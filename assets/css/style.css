@@ -174,17 +174,17 @@ input[type=button]{
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     
+    body{
+        min-width: 768px;
+    }
+
     /* NAV MENU */
     .container{
-        width: 100%;
+        width: 95%;
     }
 
     .row{
         justify-content: flex-start;
-    }
-
-    .logo_nav{
-        padding-left: 1rem;
     }
 
     nav .col-lg-4 > ul{
@@ -201,23 +201,38 @@ input[type=button]{
         margin-left: 5rem;
     }
     /* /NAV MENU */
+
+    /* JUMBO BANNER */
+    .form_container{
+        width: 90%;
+    }
+
+    .jumbo_text{  
+        font-size: 1.19rem;
+        line-height: 2.8rem;
+    }
+   
+    .jumbo p{
+        font-size: 1.5rem;
+    }
+    /* /JUMBO BANNER */
 
 }
 
 
 @media screen and (max-width: 767px) {
 
+    body{
+        min-width: 767px;
+    }
+
     /* NAV MENU */
     .container{
-        width: 100%;
+        width: 95%;
     }
 
     .row{
         justify-content: flex-start;
-    }
-    
-    .logo_nav{
-        padding-left: 1rem;
     }
 
     nav .col-lg-4 > ul{
@@ -234,5 +249,28 @@ input[type=button]{
         margin-left: 5rem;
     }
     /* /NAV MENU */
+
+    /* JUMBO BANNER */
+
+    .jumbo > .container > div:last-child{
+        justify-content: center;
+    }
+
+    .jumbo > .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form_container{
+        width: 100%;
+    }
+    
+    .jumbo p{
+        font-size: 2.25rem;
+        line-height: 3rem;
+        font-weight: 400;
+    }
+
+    /* /JUMBO BANNER */
 
 }
