@@ -39,12 +39,12 @@ body{
 
 .btn{
     border-radius: 5px;
+    color: #408FFF;
+    padding: 0.5rem 1rem;
 }
 
 .btn_holo{
-    color: #408FFF;
     border: 1px solid #408FFF;
-    padding: 0.5rem 1rem;
 }
 
 
@@ -117,9 +117,12 @@ body{
     padding-left: 1rem;
 }
 
+.link_menu > li > a:not(.btn){
+    color: #082051;
+}
+
 .link_menu > li > a{
     text-decoration: none;
-    color: #082051;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -352,8 +355,20 @@ margin-top: 0.8rem;
 .test_container > div:last-child{
     border: none;
 }
-
 /* /TEST SPEED */
+
+/* GET STARTED */
+.btn_account{
+    background-color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn_position{
+    margin: 1rem 0 3rem 0;
+}
+
+/* /GET STARTED */
 
 
 @media screen and (min-width: 992px) {
