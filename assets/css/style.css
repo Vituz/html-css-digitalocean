@@ -216,6 +216,59 @@ input[type=button]{
 }
 /* /JUMBO BANNER */
 
+/* CHAT */
+.chat{
+    position: fixed;
+    width: 5rem;
+    background-color: #006AFF;
+    right: 5rem;
+    bottom: 3rem;
+    border-radius: 5px;
+}
+
+.chat img{
+    width: 100%;
+}
+
+.chat span{
+    position: absolute;
+    top: -0.6rem;
+    right: -0.6rem;
+    background-color: red;
+    border-radius: 100%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    color: white;
+    border: 4px solid white;
+}
+
+.dropcontent{
+    display: none;
+    background-color: white;
+    position: absolute;
+    min-width: 20rem;
+    top: 0;
+    right: 6rem;
+    border-radius: 5px;
+    padding: 0.7rem 0.6rem;
+    font-weight: 500;
+}
+
+.square{
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -5px;
+    top: 60%;
+}
+
+.chat:hover .dropcontent{
+    display: block;
+}
+/* /CHAT */
+
 /* PARTNERS */
 .partners > div > img {
     width: 10rem;
