@@ -100,6 +100,10 @@ body{
 .bg_linear{
     background: linear-gradient(180deg, #0047C5 0%, #001E9A 100%);
 }
+
+.bg_darkblue{
+    background-color: #031C4E;
+}
 /* /Color */
 
 /* /UTILITY */
@@ -369,6 +373,60 @@ margin-top: 0.8rem;
 }
 
 /* /GET STARTED */
+
+ /* FOOTER */
+.logo_footer{
+    margin-top: 2rem;
+}
+
+.logo_footer h5{
+    color: #516181;
+    margin: 0.1rem 0;
+    font-size: 1rem;
+}
+
+ .loghi_social > li > a {
+    color: #707C98;
+}
+
+.loghi_social > li  {
+    list-style: none;
+    display: inline-block;
+    padding: 0.7rem 0.3rem;
+}
+
+.logo_footer span{
+    color: #516181;
+}
+
+.footer_list > li > a{
+    color: #9BA3B5;
+}
+
+
+
+.footer_list{
+    list-style: none;
+    display: inline-block;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.footer_list > li{
+    padding: 0.3rem 0;
+}
+
+.footer_list > li > a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer_list li:first-child > a{
+    color: white;
+    font-size: 1rem;
+}
+
+/* /FOOTER */
 
 
 @media screen and (min-width: 992px) {
